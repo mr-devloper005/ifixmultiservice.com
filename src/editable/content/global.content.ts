@@ -10,9 +10,9 @@ export const globalContent = {
   nav: {
     tagline: 'Independent reading platform',
     primaryLinks: [
-      { label: 'Articles', href: '/articles' },
-      { label: 'Visuals', href: '/image-sharing' },
-      { label: 'Listings', href: '/listings' },
+      { label: 'Home', href: '/' },
+      { label: 'Search', href: '/search' },
+      { label: 'About', href: '/about' },
       { label: 'Contact', href: '/contact' },
     ],
     actions: {
@@ -25,12 +25,10 @@ export const globalContent = {
     description: 'A connected publishing surface for articles, visuals, listings, profiles, bookmarks, and downloadable resources.',
     columns: [
       {
-        title: 'Explore',
+        title: 'Discover',
         links: [
-          { label: 'Articles', href: '/articles' },
-          { label: 'Listings', href: '/listings' },
-          { label: 'Images', href: '/image-sharing' },
-          { label: 'PDF Library', href: '/pdf' },
+          { label: 'Home', href: '/' },
+          { label: 'Search', href: '/search' },
         ],
       },
       {
