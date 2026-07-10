@@ -35,8 +35,8 @@ export function EditableFooter() {
       <div className="relative mx-auto grid max-w-[var(--editable-container)] gap-10 px-4 py-14 sm:px-6 lg:grid-cols-[1.4fr_1fr_1fr] lg:px-8">
         <div>
           <Link href="/" className="inline-flex items-center gap-3">
-            <span className="flex h-11 w-11 items-center justify-center rounded-full border border-[var(--slot4-gold-soft)] bg-[var(--slot4-surface-bg)]">
-              <img src="/favicon.png?v=20260413" alt={SITE_CONFIG.name} className="h-8 w-8 object-contain" />
+            <span className="flex h-10 w-10 items-center justify-center rounded-full border border-[var(--slot4-gold-soft)] bg-[var(--slot4-surface-bg)]">
+              <img src="/favicon.png?v=20260413" alt={SITE_CONFIG.name} className="h-12 w-12 object-contain" />
             </span>
             <span className="editable-display text-2xl font-semibold tracking-[0.03em]">{SITE_CONFIG.name}</span>
           </Link>
