@@ -5,7 +5,6 @@ import Link from 'next/link'
 import { usePathname } from 'next/navigation'
 import { Menu, Search, UserPlus, LogIn, X, PlusCircle } from 'lucide-react'
 import { SITE_CONFIG } from '@/lib/site-config'
-import { globalContent } from '@/editable/content/global.content'
 import { useEditableLocalAuthSession } from '@/editable/components/EditableLocalAuthForms'
 
 export function EditableNavbar() {
@@ -23,14 +22,11 @@ export function EditableNavbar() {
         {/* Brand */}
         <Link href="/" className="group flex shrink-0 items-center gap-3">
           <span className="flex h-10 w-10 items-center justify-center rounded-full border border-[var(--slot4-gold-soft)] bg-[var(--slot4-surface-bg)] transition group-hover:border-[var(--slot4-gold)]">
-            <img src="/favicon.png?v=20260413" alt={SITE_CONFIG.name} className="h-7 w-7 object-contain" />
+            <img src="/favicon.png?v=20260413" alt={SITE_CONFIG.name} className="h-12 w-12 object-contain" />
           </span>
           <span className="hidden min-w-0 sm:block">
             <span className="editable-display block max-w-[220px] truncate text-[1.35rem] font-semibold leading-none tracking-[0.04em]">
               {SITE_CONFIG.name}
-            </span>
-            <span className="mt-1.5 block max-w-[220px] truncate text-[9px] font-semibold uppercase tracking-[0.34em] text-[var(--slot4-gold)]">
-              {globalContent.nav?.tagline || SITE_CONFIG.tagline}
             </span>
           </span>
         </Link>
